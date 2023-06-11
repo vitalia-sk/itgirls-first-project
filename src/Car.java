@@ -41,6 +41,6 @@ public class Car {
         System.out.println(anna.brand + anna.up());
 
         Car sofia = new Car("pink", "lada");
-        System.out.println("В гараже добавился новый автомобиль " + sofia.brand);
+        System.out.println("В гараже добавился новый автомобиль " + sofia.color + " " + sofia.brand);
     }
 }
