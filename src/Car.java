@@ -11,6 +11,14 @@ public class Car {
         return " замедляется";
     }
 
+    public Car(){
+    }
+
+    public Car(String color, String brand){
+        this.color = color;
+        this.brand = brand;
+    }
+
     public static void main(String[] args) {
         Car anna = new Car();
         anna.color = "red";
@@ -31,5 +39,8 @@ public class Car {
         System.out.println(marina.brand + marina.up());
         System.out.println(natalia.brand + natalia.low());
         System.out.println(anna.brand + anna.up());
+
+        Car sofia = new Car("pink", "lada");
+        System.out.println("В гараже добавился новый автомобиль " + sofia.brand);
     }
 }
